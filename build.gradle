@@ -1,0 +1,7 @@
+allprojects {
+    plugins.withId("com.liferay.node") {
+        afterEvaluate {
+            node.download = false
+        }
+    }
+}

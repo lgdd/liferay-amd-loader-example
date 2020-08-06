@@ -1,0 +1,20 @@
+{
+	"name": "shared-js-libs",
+	"version": "1.0.0",
+	"description": "Shared JavaScript Libraries",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.18.5",
+		"liferay-npm-build-support": "^2.18.5"
+	},
+	"dependencies": {
+		"jquery": "^2.2.4",
+		"jquery3": "npm:jquery@^3.5.1",
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0"
+	},
+	"scripts": {
+		"build": "npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"deploy": "npm run build && lnbs-deploy"
+	}
+}
